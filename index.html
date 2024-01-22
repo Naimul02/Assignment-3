@@ -14,6 +14,13 @@
     />
     <script src="https://cdn.tailwindcss.com"></script>
 
+    <!-- manrope google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&display=swap"
+      rel="stylesheet"
+    />
     <!-- customize color -->
     <script>
       tailwind.config = {
@@ -26,6 +33,57 @@
         },
       };
     </script>
+
+    <style>
+      .manrope {
+        font-family: "Manrope", sans-serif;
+      }
+    </style>
   </head>
-  <body></body>
+  <body class="manrope">
+    <header class="container mx-auto relative lg:mt-10 mt-0">
+      <!-- banner section -->
+      <div class="carousel w-full max-h-[500px]">
+        <div id="slide1" class="carousel-item flex-col relative w-full">
+          <img src="Images/1.png" class="w-full object-cover h-full" />
+
+          <div
+            class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
+          >
+            <a href="#slide4" class="btn btn-circle">❮</a>
+            <a href="#slide2" class="btn btn-circle">❯</a>
+          </div>
+        </div>
+        <div id="slide2" class="carousel-item relative w-full">
+          <img src="Images/cup-2.jpg" class="w-full object-cover h-full" />
+          <div
+            class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
+          >
+            <a href="#slide1" class="btn btn-circle">❮</a>
+            <a href="#slide3" class="btn btn-circle">❯</a>
+          </div>
+        </div>
+        <div id="slide3" class="carousel-item relative w-full">
+          <img src="Images/cup-5.png" class="w-full object-cover h-full" />
+          <div
+            class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
+          >
+            <a href="#slide2" class="btn btn-circle">❮</a>
+            <a href="#slide1" class="btn btn-circle">❯</a>
+          </div>
+        </div>
+      </div>
+      <div
+        class="max-w-[502px] bg-[#131318] p-8 rounded-2xl fixed lg:absolute lg:right-[20px] lg:top-[335px]"
+      >
+        <h2 class="text-[#fff]">Meet all the heroes from the field</h2>
+        <p class="text-white mt-3">
+          Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis
+          placerat dolor. Purus urna in sit nullam proin.
+        </p>
+      </div>
+    </header>
+    <main></main>
+    <footer></footer>
+  </body>
 </html>
