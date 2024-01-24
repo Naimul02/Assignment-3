@@ -47,9 +47,58 @@
     </style>
   </head>
   <body class="manrope">
-    <header class="container mx-auto relative lg:mt-10 mt-0">
+    <header class="container mx-auto relative">
+      <!-- navbar -->
+      <div class="navbar bg-base-100 my-3">
+        <div class="navbar-start">
+          <div class="dropdown">
+            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-5 w-5"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h8m-8 6h16"
+                />
+              </svg>
+            </div>
+            <ul
+              tabindex="0"
+              class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
+            >
+              <li class="text-red-500 font-bold"><a>Home</a></li>
+
+              <li class="font-bold"><a>About</a></li>
+              <li class="font-bold"><a>Pages</a></li>
+              <li class="font-bold"><a>Blog</a></li>
+            </ul>
+          </div>
+          <a class="btn btn-ghost text-xl lg:text-4xl font-extrabold"
+            >Hockey<span class="text-red-500 -mx-2">’</span>s</a
+          >
+        </div>
+        <div class="navbar-center hidden lg:flex">
+          <ul class="menu menu-horizontal px-1">
+            <li class="text-red-500 font-bold"><a>Home</a></li>
+
+            <li class="font-bold"><a>About</a></li>
+            <li class="font-bold"><a>Pages</a></li>
+            <li class="font-bold"><a>Blog</a></li>
+          </ul>
+        </div>
+        <div class="navbar-end flex items-center gap-3">
+          <i class="fa-solid fa-magnifying-glass text-2xl hidden lg:block "></i>
+          <a class="btn bg-red-500 text-white hover:text-black">Get Ticket</a>
+        </div>
+      </div>
       <!-- banner section -->
-      <div class="carousel w-full max-h-[500px]">
+      <div class="carousel w-full max-h-[500px] lg:rounded-2xl">
         <div id="slide1" class="carousel-item flex-col relative w-full">
           <img src="Images/1.png" class="w-full object-cover h-full" />
 
@@ -80,7 +129,7 @@
         </div>
       </div>
       <div
-        class="max-w-[502px] bg-[#131318] p-8 rounded-2xl static lg:absolute lg:right-[20px] lg:top-[335px]"
+        class="max-w-[502px] bg-[#131318] p-8 rounded-2xl static lg:absolute lg:right-[20px] lg:top-[415px]"
       >
         <h2 class="text-[#fff]">Meet all the heroes from the field</h2>
         <p class="text-white mt-3">
